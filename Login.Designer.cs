@@ -28,21 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPass = new System.Windows.Forms.TextBox();
+            this.Email = new System.Windows.Forms.Label();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.Password = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // Form1
+            // txtName
+            // 
+            this.txtName.Location = new System.Drawing.Point(232, 112);
+            this.txtName.Multiline = true;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(125, 37);
+            this.txtName.TabIndex = 0;
+            // 
+            // txtPass
+            // 
+            this.txtPass.Location = new System.Drawing.Point(232, 207);
+            this.txtPass.Multiline = true;
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(125, 32);
+            this.txtPass.TabIndex = 1;
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(82, 136);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(32, 13);
+            this.Email.TabIndex = 2;
+            this.Email.Text = "Email";
+            // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(189, 319);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(129, 48);
+            this.btnOK.TabIndex = 4;
+            this.btnOK.Text = "Login";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // Password
+            // 
+            this.Password.AutoSize = true;
+            this.Password.Location = new System.Drawing.Point(82, 219);
+            this.Password.Name = "Password";
+            this.Password.Size = new System.Drawing.Size(53, 13);
+            this.Password.TabIndex = 5;
+            this.Password.Text = "Password";
+            // 
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(495, 424);
-            this.Name = "Form1";
+            this.Controls.Add(this.Password);
+            this.Controls.Add(this.btnOK);
+            this.Controls.Add(this.Email);
+            this.Controls.Add(this.txtPass);
+            this.Controls.Add(this.txtName);
+            this.Name = "Login";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPass;
+        private System.Windows.Forms.Label Email;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Label Password;
     }
 }
 

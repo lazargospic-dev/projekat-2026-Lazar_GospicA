@@ -19,7 +19,12 @@ namespace projekat_2026_Lazar_GospicA
 
         private void Form1_Load(object sender, EventArgs e)
         {
-           // Lazar Gospic 
+           // Lazar Gospic
+        }
+
+        private void btnOK_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
