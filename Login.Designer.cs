@@ -1,6 +1,6 @@
 ﻿namespace projekat_2026_Lazar_GospicA
 {
-    partial class Form1
+    partial class Login
     {
         /// <summary>
         /// Required designer variable.
@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(495, 424);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
