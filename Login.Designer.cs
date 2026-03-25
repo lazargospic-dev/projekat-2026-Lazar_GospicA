@@ -33,6 +33,7 @@
             this.Email = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.Password = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtName
@@ -79,11 +80,22 @@
             this.Password.TabIndex = 5;
             this.Password.Text = "Password";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(212, 58);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Dobrodosli";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.ClientSize = new System.Drawing.Size(495, 424);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Password);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.Email);
@@ -104,6 +116,7 @@
         private System.Windows.Forms.Label Email;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label Password;
+        private System.Windows.Forms.Label label1;
     }
 }
 

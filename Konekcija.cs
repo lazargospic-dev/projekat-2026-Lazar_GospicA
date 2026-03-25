@@ -3,10 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace projekat_2026_Lazar_GospicA
 {
     internal class Konekcija
     {
+        static public SqlConnection Connect()
+        {
+            string cs;
+            cs = ConfigurationManager.ConnectionStrings["skola"].ConnectionString;
+            return new SqlConnection(cs);
+        }
     }
 }
