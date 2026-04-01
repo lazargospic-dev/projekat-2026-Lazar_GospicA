@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Dnevnik_Andjela_Simic
+namespace Dnevnik_Lazar_Gospic
 {
     public partial class Sifarnik : Form
     {
